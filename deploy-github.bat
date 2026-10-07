@@ -24,11 +24,15 @@ if not exist ".git" (
     git branch -M main
 )
 
-git remote get-url origin >nul 2>nul
+git remote set-url origin https://yashpatel59684@github.com/yashpatel59684/yashpatel59684.github.io.git >nul 2>nul
 if %errorlevel% neq 0 (
-    echo [*] Setting remote origin to: https://github.com/yashpatel59684/yashpatel59684.github.io.git
-    git remote add origin https://github.com/yashpatel59684/yashpatel59684.github.io.git
+    echo [*] Setting remote origin to: https://yashpatel59684@github.com/yashpatel59684/yashpatel59684.github.io.git
+    git remote add origin https://yashpatel59684@github.com/yashpatel59684/yashpatel59684.github.io.git
 )
+git config user.name "Yash Patel"
+git config user.email "yashpatel59684@gmail.com"
+git config credential.username "yashpatel59684"
+
 
 echo.
 echo [*] Staging all files...
@@ -79,10 +83,14 @@ if %errorlevel% equ 0 (
 ) else (
     echo.
     echo ========================================================
-    echo   [NOTE] Push did not succeed.
-    echo   Agar authentication prompt aaya ho, toh browser me
-    echo   'Sign in with your browser' karke yashpatel59684
-    echo   account se authorize kar do.
+    echo   [NOTE] Agar authentication window open hui hai:
+    echo   Browser me 'Sign in with your browser' click karke
+    echo   yashpatel59684 account se login / authorize karein.
+    echo.
+    echo   Agar dubara 403 error aaye:
+    echo   Command prompt me yeh run kare:
+    echo     cmdkey /delete:git:https://github.com
+    echo   Aur fir dubara deploy-github.bat run kare!
     echo ========================================================
 )
 

@@ -29,11 +29,15 @@ if (-not (Test-Path ".git")) {
 }
 
 # Check Git Remote
-$remoteCheck = git remote get-url origin 2>$null
-if (-not $remoteCheck) {
-    git remote add origin https://github.com/yashpatel59684/yashpatel59684.github.io.git
-    Write-Host "[*] Remote origin set to: https://github.com/yashpatel59684/yashpatel59684.github.io.git" -ForegroundColor Green
+git remote set-url origin https://yashpatel59684@github.com/yashpatel59684/yashpatel59684.github.io.git 2>$null
+if ($LASTEXITCODE -ne 0) {
+    git remote add origin https://yashpatel59684@github.com/yashpatel59684/yashpatel59684.github.io.git
 }
+git config user.name "Yash Patel"
+git config user.email "yashpatel59684@gmail.com"
+git config credential.username "yashpatel59684"
+Write-Host "[*] Remote origin set to: https://yashpatel59684@github.com/yashpatel59684/yashpatel59684.github.io.git" -ForegroundColor Green
+
 
 # Stage and Commit
 Write-Host "[*] Staging files..." -ForegroundColor Gray
