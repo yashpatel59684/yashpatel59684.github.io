@@ -4,17 +4,19 @@
     "headline": "Senior Unity Developer | 6.5+ Yrs Exp | Console (Nintendo Switch), Mobile & Multiplayer",
     "vanityName": "yash-patel-9b42b1150",
     "profileUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/",
-    "location": "Baner, Pune, Maharashtra, India",
+    "location": "Baner, Pune, Maharashtra, India (411045)",
+    "phone": "+91 70699 10936",
+    "email": "yashpatel59684@gmail.com",
     "avatar": "https://avatars.githubusercontent.com/u/50235810?v=4",
     "availability": "Available for Senior & Lead Roles",
-    "summary": "Senior Unity Engineer with 6.5+ years of shipping commercial titles across Nintendo Switch, Mobile (iOS/Android), PC, and WebGL. Specialized in low-latency multiplayer (UDP/WebSockets), zero-GC memory optimization, and agentic AI tooling.",
-    "lastSynced": "2026-10-08T13:06:49.285Z",
+    "summary": "Senior Unity Game Developer with 6.5+ years of experience. Shipped 20+ mobile/PC features to production across 3 domains (gaming, insurance, medical), delivering 95% of sprints/releases on time. Strong in Unity and C#, gameplay programming, multiplayer, optimization, and cross-platform deployments. Experienced in leading small teams, mentoring junior developers, and collaborating with designers, artists, and backend engineers to ship production-ready features.",
+    "lastSynced": "2026-10-08T13:13:47.451Z",
     "syncStatus": "Verified & Synced",
     "resumeUrl": "https://docs.google.com/document/d/1v926ImPwlZn63cd1Xnqg-u-2vgkjQ_2x/edit?usp=sharing&ouid=103787191956297019906&rtpof=true&sd=true"
   },
   "metrics": {
     "yearsExperience": "6.5+",
-    "featuresShipped": "15+",
+    "featuresShipped": "20+",
     "onTimeSprints": "95%",
     "netDisconnects": "<2%"
   },
@@ -820,5 +822,11 @@
       "grade": "58",
       "featured": false
     }
+  ],
+  "languages": [
+    "English",
+    "Marathi",
+    "Gujarati",
+    "Hindi"
   ]
 }
