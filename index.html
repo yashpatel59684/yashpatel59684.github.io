@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z'/></svg>">
   
+  <!-- Immediate Theme Detector (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+      }
+    })();
+  </script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -23,23 +38,23 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             mono: ['JetBrains Mono', 'monospace'],
           },
           colors: {
             brand: {
-              50: '#ecfdf5',
-              400: '#34d399',
-              500: '#10b981',
-              600: '#059669',
-              accent: '#06b6d4',
+              50: '#f4fbf7',
+              400: '#10b981',
+              500: '#059669',
+              600: '#047857',
+              accent: '#0284c7',
             },
             dark: {
-              bg: '#090d16',
-              surface: '#0f172a',
-              card: '#131e36',
-              border: '#1e293b',
-              muted: '#64748b'
+              bg: 'var(--bg-page)',
+              surface: 'var(--bg-surface)',
+              card: 'var(--bg-card)',
+              border: 'var(--border-color)',
+              muted: 'var(--text-muted)'
             }
           }
         }
@@ -48,80 +63,185 @@
   </script>
 
   <style>
+    :root, html.light {
+      --bg-page: #fafafa;
+      --bg-surface: #ffffff;
+      --bg-card: #f4f4f5;
+      --bg-card-hover: #e4e4e7;
+      --border-color: #e4e4e7;
+      --border-hover: #d4d4d8;
+      --text-heading: #09090b;
+      --text-body: #52525b;
+      --text-muted: #71717a;
+      --text-faint: #a1a1aa;
+      --card-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+      --card-hover-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.07);
+      --nav-bg: rgba(250, 250, 250, 0.88);
+      --grid-dot: rgba(0, 0, 0, 0.04);
+    }
+
+    html.dark {
+      --bg-page: #09090b;
+      --bg-surface: #121215;
+      --bg-card: #18181b;
+      --bg-card-hover: #222227;
+      --border-color: #27272a;
+      --border-hover: #3f3f46;
+      --text-heading: #fafafa;
+      --text-body: #a1a1aa;
+      --text-muted: #71717a;
+      --text-faint: #52525b;
+      --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+      --card-hover-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.7);
+      --nav-bg: rgba(9, 9, 11, 0.88);
+      --grid-dot: rgba(255, 255, 255, 0.04);
+    }
+
     body {
-      background-color: #090d16;
-      color: #e2e8f0;
-      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      transition: background-color 0.25s ease, color 0.25s ease;
     }
-    .glow-effect {
-      position: relative;
-    }
-    .glow-effect::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      background: linear-gradient(90deg, #10b981, #06b6d4);
-      border-radius: inherit;
-      z-index: -1;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .glow-effect:hover::before {
-      opacity: 0.6;
-    }
+
     .grid-bg {
-      background-image: radial-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px);
-      background-size: 28px 28px;
+      background-image: radial-gradient(var(--grid-dot) 1px, transparent 1px);
+      background-size: 24px 24px;
     }
-    /* Custom Animations for Dynamic Motion */
-    @keyframes floatSlow {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.3; transform: scale(1); }
-      50% { opacity: 0.65; transform: scale(1.06); }
-    }
-    @keyframes shimmerMove {
-      0% { background-position: -200% 0; }
-      100% { background-position: 200% 0; }
-    }
-    .animate-float {
-      animation: floatSlow 5s ease-in-out infinite;
-    }
-    .animate-float-delayed {
-      animation: floatSlow 6.5s ease-in-out infinite 1.5s;
-    }
-    .animate-pulse-glow {
-      animation: pulseGlow 5s ease-in-out infinite;
-    }
+
+    /* Minimalist tactile motion */
     .card-motion {
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+      box-shadow: var(--card-shadow);
     }
     .card-motion:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(16, 185, 129, 0.15);
+      transform: translateY(-2px);
+      box-shadow: var(--card-hover-shadow);
     }
-    .shimmer-text {
-      background: linear-gradient(90deg, #ffffff 0%, #34d399 50%, #ffffff 100%);
-      background-size: 200% auto;
-      color: transparent;
-      -webkit-background-clip: text;
-      animation: shimmerMove 6s linear infinite;
+
+    /* Light Mode Overrides for High-Contrast Crisp Cleanliness */
+    html.light .text-white {
+      color: #09090b !important;
     }
+    html.light .text-slate-100,
+    html.light .text-slate-200,
+    html.light .text-slate-300 {
+      color: #3f3f46 !important;
+    }
+    html.light .text-slate-400 {
+      color: #71717a !important;
+    }
+    html.light .text-slate-500 {
+      color: #71717a !important;
+    }
+    html.light .text-emerald-400,
+    html.light .text-brand-400 {
+      color: #047857 !important;
+    }
+    html.light .text-cyan-400 {
+      color: #0e7490 !important;
+    }
+    html.light .text-brand-accent {
+      color: #0369a1 !important;
+    }
+    html.light .text-blue-400 {
+      color: #1d4ed8 !important;
+    }
+    html.light .text-purple-400 {
+      color: #7e22ce !important;
+    }
+    html.light nav,
+    html.light .bg-\[\#090d16\],
+    html.light .bg-\[\#090d16\]\/85 {
+      background-color: var(--nav-bg) !important;
+    }
+    html.light #mobile-menu {
+      background-color: #ffffff !important;
+    }
+    html.light input {
+      background-color: #ffffff !important;
+      color: #09090b !important;
+      border-color: #e4e4e7 !important;
+    }
+    html.light .bg-\[\#0b101c\],
+    html.light .bg-\[\#080c15\],
+    html.light .bg-\[\#080c15\]\/80,
+    html.light .bg-slate-950,
+    html.light .bg-slate-900 {
+      background-color: #fafafa !important;
+    }
+    html.light .bg-slate-900\/90,
+    html.light .bg-slate-900\/80 {
+      background-color: #ffffff !important;
+    }
+    html.light .border-white\/5,
+    html.light .border-white\/10,
+    html.light .border-white\/20 {
+      border-color: rgba(0, 0, 0, 0.08) !important;
+    }
+    html.light .bg-white\/10 {
+      background-color: rgba(0, 0, 0, 0.04) !important;
+    }
+    html.light .bg-black\/70,
+    html.light .bg-black\/40 {
+      background-color: rgba(0, 0, 0, 0.06) !important;
+      color: #27272a !important;
+    }
+    /* Invert white partner logos in light mode */
+    html.light img[src*="White-Flat"] {
+      filter: invert(1) brightness(0.15);
+    }
+    /* Preserve image banner badges on game screenshots */
+    .image-overlay-badge {
+      background-color: rgba(0, 0, 0, 0.75) !important;
+      color: #f4f4f5 !important;
+      border-color: rgba(255, 255, 255, 0.15) !important;
+    }
+
+    /* Video modal always stays cinema dark */
+    #video-modal .bg-dark-surface {
+      background-color: #121215 !important;
+      border-color: #27272a !important;
+    }
+    #video-modal .bg-dark-card {
+      background-color: #18181b !important;
+    }
+    #video-modal h3, #video-modal h4, #video-modal p {
+      color: #fafafa !important;
+    }
+
+    /* Theme Toggle Icon Rules */
+    html.dark #theme-icon-sun,
+    html.dark .theme-icon-sun-mob {
+      display: inline-block !important;
+    }
+    html.dark #theme-icon-moon,
+    html.dark .theme-icon-moon-mob {
+      display: none !important;
+    }
+
+    html.light #theme-icon-sun,
+    html.light .theme-icon-sun-mob {
+      display: none !important;
+    }
+    html.light #theme-icon-moon,
+    html.light .theme-icon-moon-mob {
+      display: inline-block !important;
+    }
+
     /* Custom Scrollbar */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #090d16;
+      background: var(--bg-page);
     }
     ::-webkit-scrollbar-thumb {
-      background: #1e293b;
-      border-radius: 4px;
+      background: var(--border-color);
+      border-radius: 3px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #10b981;
+      background: var(--text-muted);
     }
   </style>
 </head>
@@ -195,7 +315,7 @@
         <div>
           <span class="font-bold text-lg tracking-tight text-white block">Yash Patel</span>
           <span class="text-xs font-mono text-brand-400 flex items-center gap-1.5">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
             Senior Unity Developer
           </span>
         </div>
@@ -203,7 +323,7 @@
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-brand-400 transition-colors">Overview</a>
+        <a href="#home" class="hover:text-brand-400 transition-colors">Overview</a>
         <a href="#specializations" class="hover:text-brand-400 transition-colors">Expertise</a>
         <a href="#projects" class="hover:text-brand-400 transition-colors">Projects</a>
         <a href="#skills" class="hover:text-brand-400 transition-colors">Skills</a>
@@ -213,6 +333,11 @@
 
       <!-- Action Buttons -->
       <div class="hidden md:flex items-center gap-3">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" onclick="toggleTheme()" class="p-2.5 rounded-xl bg-dark-surface border border-dark-border text-slate-300 hover:text-white hover:border-brand-500/50 hover:bg-dark-card transition-all flex items-center justify-center cursor-pointer" aria-label="Toggle Theme" title="Toggle Light / Dark Mode">
+          <i data-lucide="sun" id="theme-icon-sun" class="w-4 h-4 text-amber-400"></i>
+          <i data-lucide="moon" id="theme-icon-moon" class="w-4 h-4 text-slate-700"></i>
+        </button>
         <a href="https://github.com/yashpatel59684" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-dark-surface border border-dark-border text-slate-300 hover:text-white hover:border-brand-500/50 hover:bg-dark-card transition-all" title="GitHub Profile">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
         </a>
@@ -236,13 +361,18 @@
 
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden bg-dark-surface border-b border-dark-border px-6 py-6 space-y-4">
-      <a href="#about" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Overview</a>
+      <a href="#home" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Overview</a>
       <a href="#specializations" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Expertise</a>
       <a href="#projects" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Projects</a>
       <a href="#skills" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Skills</a>
       <a href="#experience" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Experience</a>
       <a href="#contact" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Contact</a>
-      <div class="pt-4 flex items-center gap-3">
+      <div class="pt-4 flex items-center gap-2.5 flex-wrap">
+        <button onclick="toggleTheme()" class="p-2.5 rounded-lg bg-dark-card border border-dark-border text-slate-300 hover:text-white flex items-center gap-1.5 text-xs font-mono cursor-pointer" aria-label="Toggle Theme" title="Toggle Light / Dark Mode">
+          <span class="theme-icon-sun-mob"><i data-lucide="sun" class="w-4 h-4 text-amber-400"></i></span>
+          <span class="theme-icon-moon-mob"><i data-lucide="moon" class="w-4 h-4 text-slate-700"></i></span>
+          <span>Theme</span>
+        </button>
         <a href="https://github.com/yashpatel59684" target="_blank" class="p-2.5 rounded-lg bg-dark-card border border-dark-border text-slate-300 hover:text-white" title="GitHub">
           <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
         </a>
@@ -260,10 +390,6 @@
 
   <!-- HERO SECTION WITH LIVE DIRECT AVATAR & STATS -->
   <section id="home" class="relative pt-36 pb-20 md:pt-44 md:pb-28 grid-bg overflow-hidden">
-    <!-- Ambient glow lights -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-brand-500/10 blur-[130px] pointer-events-none rounded-full"></div>
-    <div class="absolute top-1/3 left-1/4 w-[350px] h-[350px] bg-brand-accent/10 blur-[110px] pointer-events-none rounded-full"></div>
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
@@ -271,14 +397,14 @@
         <div class="lg:col-span-8">
           <!-- Status pill -->
           <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-dark-surface/90 border border-brand-500/30 text-xs font-mono text-slate-300 mb-8 shadow-inner">
-            <span class="w-2 h-2 rounded-full bg-brand-400 animate-ping"></span>
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             <span>Baner, Pune, Maharashtra, India (411045)</span>
             <span class="text-dark-muted">•</span>
             <span class="text-brand-400 font-medium">Available for Senior & Lead Roles</span>
           </div>
 
           <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">
-            Architecting High-Performance <span class="bg-gradient-to-r from-brand-400 via-brand-500 to-brand-accent bg-clip-text text-transparent">Gameplay Systems</span> & Cross-Platform Engines.
+            Architecting High-Performance <span class="text-brand-400">Gameplay Systems</span> & Cross-Platform Engines.
           </h1>
 
           <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-10 font-normal">
@@ -329,18 +455,16 @@
 
         <!-- Right: Real Direct Profile Visual Card -->
         <div class="lg:col-span-4 flex justify-center">
-          <div class="relative w-full max-w-sm rounded-3xl bg-dark-surface border border-dark-border p-6 shadow-2xl overflow-hidden group animate-float card-motion">
-            <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-500/20 rounded-full blur-3xl pointer-events-none"></div>
-            
+          <div class="relative w-full max-w-sm rounded-3xl bg-dark-surface border border-dark-border p-6 shadow-2xl overflow-hidden group card-motion">
             <div class="relative flex flex-col items-center text-center">
               <!-- Live Profile Avatar -->
               <div class="relative mb-5">
-                <div class="w-32 h-32 rounded-2xl p-1 bg-gradient-to-tr from-brand-500 via-brand-accent to-purple-500 shadow-xl shadow-brand-500/25">
+                <div class="w-32 h-32 rounded-2xl p-1 bg-gradient-to-tr from-brand-500 to-brand-accent shadow-xl shadow-brand-500/10">
                   <img src="https://avatars.githubusercontent.com/u/50235810?v=4" alt="Yash Patel Profile" class="w-full h-full object-cover rounded-[14px]">
                 </div>
-                <div class="absolute -bottom-2 -right-2 px-2.5 py-1 rounded-full bg-[#090d16] border border-brand-500 text-[10px] font-mono font-bold text-brand-400 flex items-center gap-1 shadow-lg">
-                  <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
-                  ONLINE
+                <div class="absolute -bottom-2 -right-2 px-2.5 py-1 rounded-full bg-dark-surface border border-emerald-500/40 text-[10px] font-mono font-semibold text-emerald-400 flex items-center gap-1.5 shadow-md">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  Open to Work
                 </div>
               </div>
 
@@ -356,8 +480,8 @@
                 <span class="px-2.5 py-1 rounded-lg bg-dark-card text-brand-400 border border-brand-500/30 flex items-center gap-1">
                   <i data-lucide="zap" class="w-3 h-3"></i> Unity 6 / LTS
                 </span>
-                <span class="px-2.5 py-1 rounded-lg bg-dark-card text-purple-400 border border-purple-500/30 flex items-center gap-1">
-                  <i data-lucide="bot" class="w-3 h-3"></i> AI MCP Agentic
+                <span class="px-2.5 py-1 rounded-lg bg-dark-card text-sky-400 border border-sky-500/30 flex items-center gap-1">
+                  <i data-lucide="cpu" class="w-3 h-3"></i> Game Systems / C#
                 </span>
               </div>
 
@@ -462,16 +586,16 @@
         <!-- Card 4 -->
         <div class="p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
           <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="bot" class="w-6 h-6"></i>
+            <i data-lucide="cpu" class="w-6 h-6"></i>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">AI-Augmented Dev</h3>
+          <h3 class="text-lg font-bold text-white mb-2">Tooling & Automation</h3>
           <p class="text-sm text-slate-400 leading-relaxed mb-4">
-            MCP (Model Context Protocol) for Unity editor ASTs, autonomous multi-agent QA pipelines, pre-commit verification guardrails cutting routine dev time by 40–60%.
+            Custom Unity Editor tooling, automated build verification, and modern developer workflows cutting routine dev time by 40–60%.
           </p>
           <div class="flex flex-wrap gap-1.5 font-mono text-[11px] text-purple-400">
-            <span class="bg-dark-card px-2 py-0.5 rounded">MCP Workflows</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">Antigravity</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">Editor AST</span>
+            <span class="bg-dark-card px-2 py-0.5 rounded">Custom Inspectors</span>
+            <span class="bg-dark-card px-2 py-0.5 rounded">CI Pipelines</span>
+            <span class="bg-dark-card px-2 py-0.5 rounded">Editor Scripting</span>
           </div>
         </div>
       </div>
@@ -488,7 +612,7 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono text-emerald-400 mb-3 shadow-sm">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span id="cms-status-pill">🎮 Commercial Track Record</span>
               <span class="text-slate-500">•</span>
               <span id="project-count-pill" class="text-slate-300 font-bold">25 Shipped Games & Systems</span>
@@ -685,10 +809,6 @@
 
   <!-- UNIFIED TRACK RECORD & WORK EXPERIENCE -->
   <section id="experience" class="py-24 border-t border-dark-border bg-[#080c15]/80 relative overflow-hidden">
-    <!-- Ambient subtle glow movements -->
-    <div class="absolute -top-32 right-10 w-96 h-96 bg-brand-500/5 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
-    <div class="absolute bottom-10 left-10 w-96 h-96 bg-brand-accent/5 rounded-full blur-3xl pointer-events-none animate-pulse-glow" style="animation-delay: 2.5s;"></div>
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Unified Section Header -->
@@ -1070,6 +1190,23 @@
 
   <!-- Lucide Icon Init & Interactivity Script -->
   <script>
+    // Theme Toggle Function
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.contains('dark');
+      if (isDark) {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        localStorage.setItem('theme', 'light');
+      } else {
+        document.documentElement.classList.remove('light');
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+
     // Initialize icons
     lucide.createIcons();
 
@@ -1957,14 +2094,14 @@ Best regards,
               ${statusBadge}
             </div>
             <div class="absolute top-3 right-3 z-10">
-              <span class="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-black/70 text-slate-300 border border-white/10 backdrop-blur-md">${p.category || 'Game'}</span>
+              <span class="image-overlay-badge text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-black/70 text-slate-300 border border-white/10 backdrop-blur-md">${p.category || 'Game'}</span>
             </div>
           </div>
         ` : `
           <div class="h-36 w-full relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 flex items-center justify-center border-b border-dark-border/80">
             <i data-lucide="gamepad-2" class="w-12 h-12 text-brand-400/30"></i>
             <div class="absolute top-3 left-3">${statusBadge}</div>
-            <div class="absolute top-3 right-3"><span class="text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-black/70 text-slate-300 border border-white/10">${p.category || 'Game'}</span></div>
+            <div class="absolute top-3 right-3"><span class="image-overlay-badge text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-black/70 text-slate-300 border border-white/10">${p.category || 'Game'}</span></div>
           </div>
         `;
 
