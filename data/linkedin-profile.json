@@ -1,0 +1,824 @@
+{
+  "profile": {
+    "name": "Yash Patel",
+    "headline": "Senior Unity Developer | 6.5+ Yrs Exp | Console (Nintendo Switch), Mobile & Multiplayer",
+    "vanityName": "yash-patel-9b42b1150",
+    "profileUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/",
+    "location": "Baner, Pune, Maharashtra, India",
+    "avatar": "https://avatars.githubusercontent.com/u/50235810?v=4",
+    "availability": "Available for Senior & Lead Roles",
+    "summary": "Senior Unity Engineer with 6.5+ years of shipping commercial titles across Nintendo Switch, Mobile (iOS/Android), PC, and WebGL. Specialized in low-latency multiplayer (UDP/WebSockets), zero-GC memory optimization, and agentic AI tooling.",
+    "lastSynced": "2026-10-08T12:51:03.280Z",
+    "syncStatus": "Verified & Synced",
+    "resumeUrl": "https://docs.google.com/document/d/1v926ImPwlZn63cd1Xnqg-u-2vgkjQ_2x/edit?usp=sharing&ouid=103787191956297019906&rtpof=true&sd=true"
+  },
+  "metrics": {
+    "yearsExperience": "6.5+",
+    "featuresShipped": "15+",
+    "onTimeSprints": "95%",
+    "netDisconnects": "<2%"
+  },
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Gati",
+      "period": "Aug 2025 – Jul 2026",
+      "studio": "Dyumn Tech Private Limited",
+      "category": "Multiplayer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "role": "Ability Framework & Real-Time Sockets",
+      "techStack": [
+        "Unity",
+        "Socket.io",
+        "VFX",
+        "Audio",
+        "FTUE",
+        "Ability System"
+      ],
+      "status": "Production",
+      "description": "Implementation of ability framework for players and socket addition with VFX and audio. Created race reward screen, FTUE onboarding, obstacles, and ability selection system.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.virbhumi.gati",
+      "featured": true,
+      "imageUrl": "assets/projects/proj-1.png"
+    },
+    {
+      "id": "proj-2",
+      "title": "Virbhumi",
+      "period": "Mar 2024 – Jul 2025",
+      "studio": "Dyumn Tech Private Limited",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "role": "Core Gameplay & GraphQL Backend",
+      "techStack": [
+        "Unity",
+        "GraphQL",
+        "Shaders",
+        "Recycle ScrollView",
+        "VFX",
+        "Turn Logic"
+      ],
+      "status": "Production",
+      "description": "Engineered Sort & Filter, Gradient shader, Card UI (Information, merge, lock), Battle History/Bookmark, Challenge to friends, Spardha & Ashwamedh pagination, daily rewards, dynamic webview, and turn connection logic with backend.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.virbhumi.original&hl=en_US",
+      "featured": true,
+      "imageUrl": "assets/projects/proj-2.png"
+    },
+    {
+      "id": "proj-3",
+      "title": "Cadaviz",
+      "period": "Oct 2023 – Feb 2024",
+      "studio": "Immersivevision Technology Pvt Limited",
+      "category": "Simulations & EdTech",
+      "platforms": [
+        "PC"
+      ],
+      "role": "Physiology/Embryology & Addressables Optimization",
+      "techStack": [
+        "Unity",
+        "Addressables",
+        "ScriptableObjects",
+        "Editor Tools",
+        "RAM Tuning"
+      ],
+      "status": "Medical & Science",
+      "description": "Implemented Physiology and Embryology modules. Optimized build by converting prefabs to Addressables for low RAM footprint and faster loading. Created custom Editor tools for Histopathology content and labels.",
+      "projectLink": "https://immersivelabz.com/cadaviz/",
+      "featured": true,
+      "imageUrl": "assets/projects/proj-3.png"
+    },
+    {
+      "id": "proj-4",
+      "title": "Simulab",
+      "period": "Sep 2023 – Sep 2023",
+      "studio": "Immersivevision Technology Pvt Limited",
+      "category": "Simulations & EdTech",
+      "platforms": [
+        "Android"
+      ],
+      "role": "Interactive Physics & Chemistry Simulator",
+      "techStack": [
+        "Unity 3D",
+        "Physics Engine",
+        "Colliders",
+        "Step Sequencing",
+        "Audio"
+      ],
+      "status": "Production",
+      "description": "Engineered interactive simulations: Newton's law of cooling, Coefficient of Viscosity, Angle of inclination force, Limiting/normal friction, Criteria of Purity, and Orissa Board 9th biology curriculum.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.simulab.student&hl=en",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-4.png"
+    },
+    {
+      "id": "proj-5",
+      "title": "Super Pixel Heroes",
+      "period": "Mar 2023 – May 2023",
+      "studio": "GodSpeed Games",
+      "category": "Console & PC",
+      "platforms": [
+        "Nintendo Switch"
+      ],
+      "role": "Console Porting & Architecture Lead",
+      "techStack": [
+        "Nintendo Switch",
+        "Unity",
+        "TRC",
+        "Multiplayer Cleanup",
+        "Offline Storage"
+      ],
+      "status": "Shipped",
+      "description": "Guided junior developers on console compliance. Cleaned up redundant plugins, fixed online multiplayer dependencies for console portability, and built robust offline data architecture.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.reliancegames.superpixelheroes&hl=en",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-5.png"
+    },
+    {
+      "id": "proj-6",
+      "title": "Saint Kotar",
+      "period": "Dec 2021 – Feb 2023",
+      "studio": "GodSpeed Games",
+      "category": "Console & PC",
+      "platforms": [
+        "Nintendo Switch",
+        "PC",
+        "Steam"
+      ],
+      "role": "TRC Compliance, Input Systems & FMOD Audio",
+      "techStack": [
+        "Nintendo Switch",
+        "New Input System",
+        "FMOD",
+        "Gamepad",
+        "Touch Controls"
+      ],
+      "status": "Shipped",
+      "trailerId": "lDZbkyb8NwQ",
+      "description": "Collaborated on input action UI flow. Engineered gamepad-responsive player movement controller. Refactored New Input System to decouple controller and touch inputs. Integrated FMOD VO and music, deprecating native Unity audio.",
+      "projectLink": "https://www.soedesco.com/games/saint-kotar",
+      "featured": true,
+      "imageUrl": "assets/projects/proj-6.jpg"
+    },
+    {
+      "id": "proj-7",
+      "title": "Bomberman Prototype",
+      "period": "Aug 2022 – Aug 2022",
+      "studio": "Independent",
+      "category": "Console & PC",
+      "platforms": [
+        "PC"
+      ],
+      "role": "Rapid 5-Day Gameplay & AI Architecture",
+      "techStack": [
+        "Unity 2D",
+        "Runtime Level Gen",
+        "Enemy AI",
+        "Bomb Physics",
+        "C#"
+      ],
+      "status": "Prototype",
+      "description": "Built full gameplay prototype in 5 days. Runtime level generation scripts, adaptive enemy AI that evades player as group diminishes, blast radius physics, and destruction mechanics.",
+      "projectLink": "https://github.com/yashpatel59684/Bomberman_Unity_PC",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-7.png"
+    },
+    {
+      "id": "proj-8",
+      "title": "Jessika",
+      "period": "Jul 2021 – Oct 2021",
+      "studio": "GodSpeed Games",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "role": "800MB to 80MB Compression & Scene Streaming",
+      "techStack": [
+        "Unity",
+        "Addressables",
+        "AWS S3",
+        "Video Compression",
+        "Google Play"
+      ],
+      "status": "Shipped",
+      "trailerId": "rPHtP2t-5TU",
+      "description": "Compressed game build from 800 MB to 80 MB, and RAM from 1 GB to 250 MB via video, texture, and audio encoding. Setup AWS S3 scene streaming via Addressables. Integrated Google Play & Game Center login and achievements.",
+      "projectLink": "https://apkpure.com/jessika/com.tritriegames.jessika",
+      "featured": true,
+      "imageUrl": "assets/projects/proj-8.jpg"
+    },
+    {
+      "id": "proj-9",
+      "title": "Carscan",
+      "period": "Feb 2021 – Jun 2021",
+      "studio": "GodSpeed Games",
+      "category": "Tools & Architecture",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "role": "Offline-First Enterprise Framework & UI Engine",
+      "techStack": [
+        "Unity",
+        "UniTask / Multi-threading",
+        "Firebase",
+        "Smartlook",
+        "WebView"
+      ],
+      "status": "Shipped",
+      "description": "Developed custom dynamic UI framework handling multi-company inspection workflows. Built offline caching that auto-syncs when online. Multi-threading via Uni-thread, Firebase deep-linking, Smartlook analytics, and WebView payment checkout.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.carscan.live&hl=en_US",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-9.png"
+    },
+    {
+      "id": "proj-10",
+      "title": "Skip em",
+      "period": "Mar 2021 – Apr 2021",
+      "studio": "GodSpeed Games",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "Android"
+      ],
+      "role": "Low-End Device 1GB RAM Optimization",
+      "techStack": [
+        "Unity 3D",
+        "Mesh Combiner",
+        "Light Baking",
+        "Frame Debugger",
+        "Profiling"
+      ],
+      "status": "Shipped",
+      "description": "Resolved physics code and audio bugs. Optimized 3D scenes for 1GB RAM low-end devices using light-baked prefabs and Mesh Combiner compression. Verified with frame debugging and profiling.",
+      "projectLink": "https://apkpure.com/skip-em/com.godspeedgames.skipthem",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-10.png"
+    },
+    {
+      "id": "proj-11",
+      "title": "The ClassRoom",
+      "period": "Oct 2020 – Jan 2021",
+      "studio": "Vasundhara Infotech",
+      "category": "Multiplayer",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "role": "5-Game Online Multiplayer Suite",
+      "techStack": [
+        "Unity 2D",
+        "Socket.io",
+        "Multiplayer",
+        "UI Animations",
+        "Network Sync"
+      ],
+      "status": "Shipped",
+      "description": "Engineered real-time online multiplayer for 5 casual board games (Tic Tac Toe, Bingo, DOTS, Snake & Ladder, Ludo) with socket layer, optimized turn animations, and network stabilization.",
+      "projectLink": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/projects/",
+      "featured": true,
+      "imageUrl": "assets/projects/proj-11.svg"
+    },
+    {
+      "id": "proj-12",
+      "title": "Just moving",
+      "period": "Oct 2020 – Nov 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "Swipe Controller, Collision & Shop Monetization",
+      "techStack": [
+        "Unity 3D",
+        "Low-Poly Assets",
+        "Collision Physics",
+        "IAP",
+        "Economy"
+      ],
+      "status": "Shipped",
+      "description": "Built swipe-driven tractor controls, realistic grass-cutting collisions, monetized economy shop with IAPs and coin rewards, maintaining high FPS with low-poly assets.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.protostar.mowing&hl=en_US",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-12.png"
+    },
+    {
+      "id": "proj-13",
+      "title": "Ludo KBC",
+      "period": "Aug 2020 – Oct 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Multiplayer",
+      "platforms": [
+        "Android"
+      ],
+      "role": "Real-Money Gaming & Cashfree Gateway",
+      "techStack": [
+        "Unity",
+        "Cashfree",
+        "Best HTTP",
+        "WebSockets",
+        "OTP Auth",
+        "WebView"
+      ],
+      "status": "Shipped",
+      "description": "Built high-concurrency real-money Ludo platform with Cashfree payment gateway, OTP login, unified online/offline gameplay state, and Best HTTP socket connection layer.",
+      "projectLink": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/projects/",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-13.svg"
+    },
+    {
+      "id": "proj-14",
+      "title": "Star Basketball",
+      "period": "Jun 2020 – Jul 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "IK/CCD Animations & Versus AI",
+      "techStack": [
+        "Unity 2D",
+        "Inverse Kinematics (IK/CCD)",
+        "Versus AI",
+        "Map System"
+      ],
+      "status": "Shipped",
+      "description": "Created IK/CCD-driven character dunk animations, competitive versus AI bot, and arena level management across multiple unique court designs.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.doubletapsoftware.basketballbattle&hl=en",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-14.jpg"
+    },
+    {
+      "id": "proj-15",
+      "title": "Pizza Xishi",
+      "period": "Dec 2019 – May 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "Gameplay Prototype, i2 Localization & IAP",
+      "techStack": [
+        "Unity 2D",
+        "i2 Localization",
+        "Obstacle Patterns",
+        "In-App Purchases"
+      ],
+      "status": "Shipped",
+      "description": "Engineered platformer mechanics with dynamic obstacle patterns, multi-language support via i2 localization, inventory customization, coin collection, and cosmetic IAP upgrades.",
+      "projectLink": "https://github.com/yashpatel59684/PizzaXishi_Unity_iOS",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-15.png"
+    },
+    {
+      "id": "proj-16",
+      "title": "Mazino",
+      "period": "Apr 2020 – Apr 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "Swipe Maze Navigation & Dynamic Camera",
+      "techStack": [
+        "Unity 2D",
+        "Pathfinding",
+        "Adaptive Camera",
+        "Swipe Input"
+      ],
+      "status": "Shipped",
+      "description": "Engineered swipe-based maze navigation with difficulty-aware pathfinding algorithms and dynamic camera framing adapting to changing level layouts.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.escogitare.amazeng&hl=en",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-16.png"
+    },
+    {
+      "id": "proj-17",
+      "title": "Vulcan",
+      "period": "Mar 2020 – Mar 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "Pizza Slice Puzzle Algorithm & High-Score",
+      "techStack": [
+        "Unity 2D",
+        "Sorting & Search Algorithms",
+        "Puzzle Logic",
+        "High-Scores"
+      ],
+      "status": "Shipped",
+      "description": "Implemented puzzle mechanics generating randomized pizza slices, verified slice placements using custom sorting algorithms, with high-score collection reward loop.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.mnightt.slices&hl=en_US",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-17.png"
+    },
+    {
+      "id": "proj-18",
+      "title": "PAF Live",
+      "period": "Feb 2020 – Feb 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "3D Jenga Touch Controller & Spawner",
+      "techStack": [
+        "Unity 3D",
+        "Touch Input",
+        "Dynamic Spawning",
+        "Pass-n-Play / AI"
+      ],
+      "status": "Shipped",
+      "description": "Built 3D Jenga-style physics gameplay with touch block manipulation, infinite block spawning logic, and modes for single-player, local two-player, and AI opponents.",
+      "projectLink": "https://play.google.com/store/apps/details?id=com.maximesc.balancedtower&hl=en",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-18.jpg"
+    },
+    {
+      "id": "proj-19",
+      "title": "The Bwin-Win",
+      "period": "Feb 2020 – Feb 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "State-Machine Badminton Gameplay against AI",
+      "techStack": [
+        "Unity 2D",
+        "State Machines",
+        "Sports AI",
+        "Animation Controller"
+      ],
+      "status": "Shipped",
+      "description": "Developed state-machine-driven badminton match logic against intelligent AI, handling shot trajectories, smash timing, and responsive character animations.",
+      "projectLink": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/projects/",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-19.svg"
+    },
+    {
+      "id": "proj-20",
+      "title": "Hoops Dunk",
+      "period": "Jan 2020 – Jan 2020",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "iOS"
+      ],
+      "role": "Physics Rope-and-Bomb Basket Mechanics",
+      "techStack": [
+        "Unity 2D",
+        "Rope Physics",
+        "Trajectory",
+        "Unlockables"
+      ],
+      "status": "Shipped",
+      "description": "Created physics-driven rope-and-bomb basketball mechanics, touch jump trajectories, and reward unlocking systems with celebratory particle animations.",
+      "projectLink": "https://apps.apple.com/il/app/hoops-dunk/id1457447214",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-20.jpg"
+    },
+    {
+      "id": "proj-21",
+      "title": "Matific Galaxy (Card Counter)",
+      "period": "Dec 2019 – Dec 2019",
+      "studio": "Vasundhara Infotech",
+      "category": "Mobile & RMG",
+      "platforms": [
+        "Android"
+      ],
+      "role": "Children's Card Counter & DoTween Animations",
+      "techStack": [
+        "Unity 2D",
+        "DoTween",
+        "Particle System",
+        "Card Mathematics"
+      ],
+      "status": "Shipped",
+      "description": "Card counter game for children in an educational suite. Shuffled and positioned cards with DoTween and Particle Systems, validating 3-card sets that sum to 10 points.",
+      "projectLink": "https://matific-galaxy-maths-games-f.en.softonic.com/android",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-21.svg"
+    },
+    {
+      "id": "proj-22",
+      "title": "Elevator Challenge",
+      "period": "Oct 2019 – Oct 2019",
+      "studio": "KTHM College / Kidaura Innovation",
+      "category": "Tools & Architecture",
+      "platforms": [
+        "Desktop",
+        "Python"
+      ],
+      "role": "Iterating Elevator Algorithm",
+      "techStack": [
+        "Python",
+        "Algorithm Optimization",
+        "Data Structures"
+      ],
+      "status": "Academic / Industry",
+      "description": "Designed algorithmic solution for the iterating multi-floor elevator scheduling challenge from Kidaura Innovation.",
+      "projectLink": "https://github.com/yashpatel59684/Kidaura_Python",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-22.png"
+    },
+    {
+      "id": "proj-23",
+      "title": "Manatale Bol",
+      "period": "Jun 2019 – Sep 2019",
+      "studio": "KTHM College, Nashik (SPPU)",
+      "category": "Tools & Architecture",
+      "platforms": [
+        "Web",
+        "Full-Stack"
+      ],
+      "role": "Django Social Networking Platform",
+      "techStack": [
+        "Django",
+        "Python",
+        "JavaScript",
+        "SQL",
+        "REST"
+      ],
+      "status": "Master's Final Year",
+      "description": "Open social networking site for user feeds, image uploads, thought posts, mood status tracking, and public post lifecycle management.",
+      "projectLink": "https://github.com/yashpatel59684/ManataleBol_Django",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-23.png"
+    },
+    {
+      "id": "proj-24",
+      "title": "Smart City",
+      "period": "Nov 2018 – Mar 2019",
+      "studio": "KTHM College, Nashik (SPPU)",
+      "category": "Tools & Architecture",
+      "platforms": [
+        "IoT",
+        "Hardware",
+        "Android"
+      ],
+      "role": "IoT Sensor Network & Arduino Lead",
+      "techStack": [
+        "IoT",
+        "Arduino C++",
+        "Sensors",
+        "Android",
+        "Cloud Service"
+      ],
+      "status": "Master's First Year",
+      "description": "Comprehensive IoT system: smart parking, automated water supply with soil moisture detection, air pollution & temperature sensors, admin dashboard, and Android citizen alert app.",
+      "projectLink": "https://github.com/yashpatel59684/SmartCity-IOT",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-24.png"
+    },
+    {
+      "id": "proj-25",
+      "title": "Mitro",
+      "period": "Oct 2017 – Mar 2018",
+      "studio": "S.S.R. College of ACS, Silvassa (SPPU)",
+      "category": "Tools & Architecture",
+      "platforms": [
+        "Web",
+        "PHP"
+      ],
+      "role": "Bus Reservation Web Application",
+      "techStack": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML/CSS",
+        "Bootstrap"
+      ],
+      "status": "Bachelor's Final Year",
+      "description": "Full-stack web application for bus ticket reservations, driver & bus dispatch management, route scheduling, seat availability maps, and automated bill printing.",
+      "projectLink": "https://github.com/yashpatel59684/Mitro_PHP",
+      "featured": false,
+      "imageUrl": "assets/projects/proj-25.png"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp-1",
+      "company": "Dyumn Tech Private Limited",
+      "role": "Senior Unity Developer",
+      "period": "Apr 2025 – Jul 2026",
+      "duration": "1 yr 4 mos",
+      "location": "Pune District, Maharashtra, India · On-site",
+      "badgeColor": "emerald",
+      "companyUrl": "https://www.virbhumi.com",
+      "logoUrl": "https://www.virbhumi.com/images/virbhumi-logo.png",
+      "skills": [
+        "Anthropic Claude",
+        "Swagger API",
+        "UDP Real-Time",
+        "Design Patterns",
+        "C#",
+        "Node.js"
+      ],
+      "highlights": [
+        "Used AI tools to write boilerplate C#/Node.js, tests, and documentation, cutting routine development time by 40–60%.",
+        "Owned Scrum events and helped estimate and prioritize stories with team leads.",
+        "Mentored and supervised 2 junior developers, planned their work, and ensured they met sprint goals on time.",
+        "Built small Unreal prototypes to understand blueprints and compare against Unity workflows.",
+        "Applied Factory, Abstract Factory, Command, Strategy, and Dependency Injection patterns in Gati Lite for modular, decoupled systems; implemented UDP-based real-time sync and matchmaking in Gati."
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "Dyumn Tech Private Limited",
+      "role": "Unity Developer",
+      "period": "Mar 2024 – Mar 2025",
+      "duration": "1 yr 1 mo",
+      "location": "Pune District, Maharashtra, India · On-site",
+      "badgeColor": "cyan",
+      "companyUrl": "https://www.virbhumi.com",
+      "logoUrl": "https://www.virbhumi.com/images/virbhumi-logo.png",
+      "skills": [
+        "Jira",
+        "GraphQL",
+        "Unity LTS",
+        "Editor Tools",
+        "Git Automation"
+      ],
+      "highlights": [
+        "Launched Dyumn's first production gaming project (Virbhumi) by creating core gameplay, UI, and GraphQL integrations.",
+        "Boosted team throughput by about 70% using reusable Unity editor tools and Git automation scripts."
+      ]
+    },
+    {
+      "id": "exp-3",
+      "company": "Immersivevision Technology Pvt Limited",
+      "role": "Unity Developer",
+      "period": "Sep 2023 – Feb 2024",
+      "duration": "6 mos",
+      "location": "Pune District, Maharashtra, India · On-site",
+      "badgeColor": "indigo",
+      "companyUrl": "https://immersivelabz.com",
+      "logoUrl": "https://immersivelabz.com/wp-content/uploads/2020/08/main_logo_481X200.png",
+      "skills": [
+        "Addressables",
+        "ScriptableObjects",
+        "Inno Setup",
+        "Git",
+        "Profiling"
+      ],
+      "highlights": [
+        "Created a reusable Unity C# framework and deployed over 15 interactive physics/chemistry experiments (including setup, colliders, animations, audio, and step logic).",
+        "Collaborated with multidisciplinary teams to integrate content and ship commercial releases (Cadaviz and Simulab).",
+        "Optimized RAM and build size for PC/tablet using Unity Addressables, Scriptable Objects, and engine profiling."
+      ]
+    },
+    {
+      "id": "exp-4",
+      "company": "GodSpeed Games",
+      "role": "Associate Senior Programmer",
+      "period": "Mar 2023 – Aug 2023",
+      "duration": "6 mos",
+      "location": "Pune District, Maharashtra, India · Remote",
+      "badgeColor": "amber",
+      "companyUrl": "https://www.godspeedgames.com",
+      "logoUrl": "https://www.godspeedgames.com/wp-content/uploads/2024/11/White-Flat-e1733133515322.png",
+      "skills": [
+        "Amazon Web Services (AWS)",
+        "Miro Collaboration",
+        "Firebase",
+        "Offline UI",
+        "UniTask"
+      ],
+      "highlights": [
+        "Integrated core gameplay systems and logic in Unity/C# with cross-functional teams.",
+        "Oversaw pre-tests, code reviews, and technical architecture documentation.",
+        "Programmed an offline-first Unity inspection app (Carscan) with JSON-driven UI, robust state management, REST APIs, Firebase deep links, push notifications, analytics, and WebView payments.",
+        "The app enabled inspectors to complete 100% of workflows with poor or no network connectivity."
+      ]
+    },
+    {
+      "id": "exp-5",
+      "company": "GodSpeed Games",
+      "role": "Junior Programmer",
+      "period": "Feb 2021 – Feb 2023",
+      "duration": "2 yrs 1 mo",
+      "location": "Pune Division, Maharashtra, India",
+      "badgeColor": "emerald",
+      "companyUrl": "https://www.godspeedgames.com",
+      "logoUrl": "https://www.godspeedgames.com/wp-content/uploads/2024/11/White-Flat-e1733133515322.png",
+      "skills": [
+        "FMOD",
+        "Nintendo Switch TRC",
+        "Game Programming",
+        "SOLID",
+        "MVC",
+        "New Input System"
+      ],
+      "highlights": [
+        "Managed all technical submission and compliance requirements for Nintendo Switch builds (Saint Kotar, Jessika, Super Pixel Heroes), leveraging studio CI/CD workflows.",
+        "Applied SOLID, MVC, state machines, and event-bus patterns to keep code modular and testable.",
+        "Developed controller and touch input using the Unity New Input System, item interaction systems, and FMOD-based audio."
+      ]
+    },
+    {
+      "id": "exp-6",
+      "company": "Vasundhara Infotech",
+      "role": "Junior Unity Game Developer",
+      "period": "Dec 2019 – Jan 2021",
+      "duration": "1 yr 2 mos",
+      "location": "Surat, Gujarat, India · On-site",
+      "badgeColor": "rose",
+      "companyUrl": "https://vasundhara.io",
+      "logoUrl": "https://www.vasundhara.io/images/svg/logo.svg",
+      "skills": [
+        "Unity",
+        "Android",
+        "Cashfree Gateway",
+        "Socket.io",
+        "Real-Money Gaming",
+        "IAP"
+      ],
+      "highlights": [
+        "Delivered over 10 2D/3D mobile game releases (Ludo, board, runners, sports, puzzles) on iOS/Android.",
+        "Built monetization and progression systems (shops, in-app purchases, coin economies, cosmetics, reward loops).",
+        "Tuned difficulty and feel with designers/backend and enhanced gameplay, UI, and analytics for low-end devices.",
+        "Addressed and resolved both internal team dependencies and client-reported issues, ensuring smooth project delivery.",
+        "Implemented real-money multiplayer and socket-based systems with Cashfree integration and secure OTP login.",
+        "Improved match stability (disconnect rate under 2%) and supported thousands of concurrent low-latency sessions in production."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "title": "Unreal Engine 5 C++ Game Development",
+      "issuer": "Epic Games / Udemy",
+      "subtext": "Updated in UE 5.6",
+      "credentialUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/certifications/"
+    },
+    {
+      "id": "cert-2",
+      "title": "AI Tools Workshop",
+      "issuer": "Be10x",
+      "subtext": "Agentic & Generative AI workflows",
+      "credentialUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/certifications/"
+    },
+    {
+      "id": "cert-3",
+      "title": "Unity 3D Game Programming & Game Dev",
+      "issuer": "Udemy & Eduonix",
+      "subtext": "Commercial Architecture & Engine Mastery",
+      "credentialUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/certifications/"
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "Master's degree, Computer Science (M.Sc.)",
+      "institution": "KRT Arts, BH Commerce and AM Science (KTHM) College, Nashik",
+      "university": "Savitribai Phule Pune University",
+      "period": "Jul 2018 – Apr 2020",
+      "grade": "53",
+      "skills": [
+        "Django",
+        "Internet of Things (IoT)",
+        "Python"
+      ],
+      "featured": true
+    },
+    {
+      "id": "edu-2",
+      "degree": "Bachelor's degree, Computer Science (B.Sc.)",
+      "institution": "S.S.R. College of ACS, Silvassa",
+      "university": "Savitribai Phule Pune University",
+      "period": "Jul 2015 – Apr 2018",
+      "grade": "65",
+      "skills": [
+        "Java",
+        "C++",
+        "Data Structures"
+      ],
+      "featured": true
+    },
+    {
+      "id": "edu-3",
+      "degree": "Higher Secondary Certificate (HSC, Science)",
+      "institution": "Govt. Higher Secondary School, Silvassa",
+      "board": "Gujarat State Board",
+      "period": "Jul 2013 – Apr 2015",
+      "grade": "46",
+      "featured": false
+    },
+    {
+      "id": "edu-4",
+      "degree": "Secondary School Certificate (SSC)",
+      "institution": "Govt. Higher Secondary School, Silvassa",
+      "board": "Gujarat State Board",
+      "period": "Jul 2012 – Apr 2013",
+      "grade": "58",
+      "featured": false
+    }
+  ]
+}
