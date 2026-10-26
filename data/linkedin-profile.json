@@ -9,8 +9,8 @@
     "email": "yashpatel59684@gmail.com",
     "avatar": "https://avatars.githubusercontent.com/u/50235810?v=4",
     "availability": "Available for Senior & Lead Roles",
-    "summary": "Senior Unity Game Developer with 6.5+ years of experience. Shipped 20+ mobile/PC features to production across 3 domains (gaming, insurance, medical), delivering 95% of sprints/releases on time. Strong in Unity and C#, gameplay programming, multiplayer, optimization, and cross-platform deployments. Experienced in leading small teams, mentoring junior developers, and collaborating with designers, artists, and backend engineers to ship production-ready features.",
-    "lastSynced": "2026-10-08T14:28:29.172Z",
+    "summary": "Senior Unity Game Developer with 6.5+ years of experience. Shipped 20+ mobile/PC features to production across 3 domains (gaming, insurance, medical). Strong in Unity and C#, gameplay programming, multiplayer, optimization, and cross-platform deployments. Experienced in leading small teams, mentoring junior developers, and collaborating with designers, artists, and backend engineers to ship production-ready features.",
+    "lastSynced": "2026-10-26T18:26:16.216Z",
     "syncStatus": "Verified & Synced",
     "resumeUrl": "https://docs.google.com/document/d/1v926ImPwlZn63cd1Xnqg-u-2vgkjQ_2x/edit?usp=sharing&ouid=103787191956297019906&rtpof=true&sd=true"
   },
@@ -607,6 +607,30 @@
   "experiences": [
     {
       "id": "exp-1",
+      "company": "Stealth Mobile Project",
+      "role": "Senior Unity Game Developer",
+      "period": "Aug 2026 – Present",
+      "duration": "Present",
+      "location": "Pune, Maharashtra · Hybrid",
+      "badgeColor": "emerald",
+      "companyUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/",
+      "logoUrl": "",
+      "skills": [
+        "UPM Packages",
+        "UniTask",
+        "Zero-GC Pooling",
+        "In-App Updates",
+        "Telemetry",
+        "C#"
+      ],
+      "highlights": [
+        "Architected a modular C# service framework (UPM package) for Saves, Audio, UI, and Remote Config, enabling plug-and-play reusability across multiple Unity projects without codebase tight coupling.",
+        "Engineered core gameplay mechanics using UniTask-driven async lifecycles and zero-GC memory pooling, sustaining a locked 60 FPS on low-to-mid-tier mobile hardware.",
+        "Implemented responsive notch-safe UI architectures, defensive Google Play In-App Update pipelines with ProGuard rules and a structured event taxonomy for live-ops telemetry."
+      ]
+    },
+    {
+      "id": "exp-2",
       "company": "Dyumn Tech Private Limited",
       "role": "Senior Unity Developer",
       "period": "Apr 2025 – Jul 2026",
@@ -632,7 +656,7 @@
       ]
     },
     {
-      "id": "exp-2",
+      "id": "exp-3",
       "company": "Dyumn Tech Private Limited",
       "role": "Unity Developer",
       "period": "Mar 2024 – Mar 2025",
@@ -654,7 +678,7 @@
       ]
     },
     {
-      "id": "exp-3",
+      "id": "exp-4",
       "company": "Immersivevision Technology Pvt Limited",
       "role": "Unity Developer",
       "period": "Sep 2023 – Feb 2024",
@@ -677,7 +701,7 @@
       ]
     },
     {
-      "id": "exp-4",
+      "id": "exp-5",
       "company": "GodSpeed Games",
       "role": "Associate Senior Programmer",
       "period": "Mar 2023 – Aug 2023",
@@ -701,7 +725,7 @@
       ]
     },
     {
-      "id": "exp-5",
+      "id": "exp-6",
       "company": "GodSpeed Games",
       "role": "Junior Programmer",
       "period": "Feb 2021 – Feb 2023",
@@ -725,7 +749,7 @@
       ]
     },
     {
-      "id": "exp-6",
+      "id": "exp-7",
       "company": "Vasundhara Infotech",
       "role": "Junior Unity Game Developer",
       "period": "Dec 2019 – Jan 2021",
@@ -757,7 +781,7 @@
       "id": "cert-1",
       "title": "Unreal Engine 5 C++ Game Development",
       "issuer": "Epic Games / Udemy",
-      "subtext": "Updated in UE 5.6",
+      "subtext": "Fully Updated in UE 5.6",
       "credentialUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/certifications/"
     },
     {
@@ -769,9 +793,16 @@
     },
     {
       "id": "cert-3",
-      "title": "Unity 3D Game Programming & Game Dev",
-      "issuer": "Udemy & Eduonix",
-      "subtext": "Commercial Architecture & Engine Mastery",
+      "title": "Introduction to Game Development with Unity",
+      "issuer": "Udemy",
+      "subtext": "Commercial Game Architecture & Systems",
+      "credentialUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/certifications/"
+    },
+    {
+      "id": "cert-4",
+      "title": "Concepts in Unity 3D Game Programming",
+      "issuer": "Eduonix",
+      "subtext": "Engine Mastery & Scripting Fundamentals",
       "credentialUrl": "https://www.linkedin.com/in/yash-patel-9b42b1150/details/certifications/"
     }
   ],
