@@ -335,7 +335,6 @@
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
         <a href="#home" class="hover:text-brand-400 transition-colors">Overview</a>
-        <a href="#specializations" class="hover:text-brand-400 transition-colors">Expertise</a>
         <a href="#experience" class="hover:text-brand-400 transition-colors">Experience</a>
         <a href="#projects" class="hover:text-brand-400 transition-colors">Projects</a>
         <a href="#skills" class="hover:text-brand-400 transition-colors">Skills</a>
@@ -372,7 +371,6 @@
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden bg-dark-surface border-b border-dark-border px-6 py-6 space-y-4">
       <a href="#home" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Overview</a>
-      <a href="#specializations" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Expertise</a>
       <a href="#experience" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Experience</a>
       <a href="#projects" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Projects</a>
       <a href="#skills" class="block text-slate-300 hover:text-brand-400 font-medium mobile-link">Skills</a>
@@ -397,7 +395,7 @@
     </div>
   </nav>
 
-  <!-- HERO / OVERVIEW SECTION (MINIMALIST SENIOR GAME DEV OVERVIEW - RAHUL DAYLA INSPIRED) -->
+  <!-- HERO / OVERVIEW SECTION (UNIFIED MINIMALIST OVERVIEW & CORE PILLARS) -->
   <section id="home" class="relative pt-32 pb-16 md:pt-40 md:pb-20 grid-bg overflow-hidden border-b border-dark-border">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
@@ -436,28 +434,6 @@
         </div>
       </div>
 
-      <!-- Summary Block (Clean, High-Impact Engineering Points) -->
-      <div class="p-6 rounded-2xl bg-dark-surface/70 border border-dark-border/80 backdrop-blur-sm mb-8 space-y-3">
-        <h2 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-dark-border pb-2 flex items-center gap-2">
-          <i data-lucide="terminal" class="w-3.5 h-3.5 text-brand-400"></i>
-          <span>Engineering Overview & Summary</span>
-        </h2>
-        <div class="space-y-2 text-slate-300 text-sm sm:text-base leading-relaxed pt-1">
-          <p class="flex items-start gap-2.5">
-            <span class="text-emerald-400 font-bold shrink-0 mt-0.5">▸</span>
-            <span><strong class="text-white font-semibold">Commercial Track Record:</strong> 6.5+ years of shipping commercial game releases across Nintendo Switch, Mobile (Android/iOS), and PC with 20+ production features.</span>
-          </p>
-          <p class="flex items-start gap-2.5">
-            <span class="text-emerald-400 font-bold shrink-0 mt-0.5">▸</span>
-            <span><strong class="text-white font-semibold">Multiplayer & Systems:</strong> Specialized in real-time UDP & WebSocket networking, async lifecycles (UniTask), and zero-GC memory pooling for locked 60 FPS mobile performance.</span>
-          </p>
-          <p class="flex items-start gap-2.5">
-            <span class="text-emerald-400 font-bold shrink-0 mt-0.5">▸</span>
-            <span><strong class="text-white font-semibold">Console Porting & Compliance:</strong> Managed full technical submission and TRC requirements for Nintendo Switch titles (<em class="text-slate-200">Saint Kotar</em>, <em class="text-slate-200">Jessika</em>).</span>
-          </p>
-        </div>
-      </div>
-
       <!-- Action CTA & Key Metrics (Exact Reference Design Matching) -->
       <div class="flex flex-wrap items-center gap-4 sm:gap-5 mb-8">
         <!-- Explore Shipped Titles Button -->
@@ -476,6 +452,90 @@
         <div class="h-[76px] px-6 sm:px-7 rounded-2xl border border-white/85 bg-transparent flex flex-col justify-center text-left shrink-0 card-motion stat-card-border">
           <div class="text-3xl sm:text-4xl font-bold text-[#10b981] tracking-tight leading-none">20+</div>
           <div class="text-[10px] sm:text-[11px] font-bold text-slate-400 tracking-wider uppercase mt-1.5 whitespace-nowrap">FEATURES SHIPPED</div>
+        </div>
+      </div>
+
+      <!-- Core Pillars & Engineering Capabilities (Unified Grid) -->
+      <div class="mb-8">
+        <div class="flex items-center justify-between mb-4 pb-2 border-b border-dark-border">
+          <div class="flex items-center gap-2">
+            <i data-lucide="layers" class="w-4 h-4 text-brand-400"></i>
+            <h2 class="text-xs font-mono uppercase tracking-widest text-slate-300 font-bold">
+              Core Pillars & Engineering Focus
+            </h2>
+          </div>
+          <span class="text-[11px] font-mono text-emerald-400 font-semibold">4 Disciplines</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Pillar 1: Console & Porting -->
+          <div class="p-5 rounded-2xl bg-dark-surface/70 border border-dark-border/80 hover:border-brand-500/50 transition-all card-motion flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-3">
+                <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-white mb-1.5">Console & Porting</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                Nintendo Switch TRC compliance, input rebinding, FMOD audio integration, controller & handheld optimization.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 font-mono text-[10px] text-brand-400">
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">Nintendo Switch</span>
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">PC</span>
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">FMOD</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Multiplayer & Sync -->
+          <div class="p-5 rounded-2xl bg-dark-surface/70 border border-dark-border/80 hover:border-brand-accent/50 transition-all card-motion flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center mb-3">
+                <i data-lucide="network" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-white mb-1.5">Multiplayer & Sync</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                Real-time UDP sync, WebSockets, Socket.io, server-authoritative anti-cheat validation, matchmaking.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 font-mono text-[10px] text-brand-accent">
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">UDP Sync</span>
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">Socket.io</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Deep Optimization -->
+          <div class="p-5 rounded-2xl bg-dark-surface/70 border border-dark-border/80 hover:border-emerald-500/50 transition-all card-motion flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+                <i data-lucide="gauge" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-white mb-1.5">Deep Optimization</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                Zero-GC object pooling, draw-call batching, locked 60 FPS mobile profiling, remote Addressables catalogs.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 font-mono text-[10px] text-emerald-400">
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">Zero-GC</span>
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">60 FPS</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Tooling & Architecture -->
+          <div class="p-5 rounded-2xl bg-dark-surface/70 border border-dark-border/80 hover:border-purple-500/50 transition-all card-motion flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-sm font-bold text-white mb-1.5">Tooling & Architecture</h3>
+              <p class="text-xs text-slate-400 leading-relaxed mb-3">
+                Modular C# UPM service packages, UniTask async lifecycles, and custom Unity Editor tools cutting dev time by 40–60%.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-1 font-mono text-[10px] text-purple-400">
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">UPM Packages</span>
+              <span class="bg-dark-card px-2 py-0.5 rounded border border-dark-border/60">UniTask</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -503,83 +563,6 @@
         </a>
       </div>
 
-    </div>
-  </section>
-
-  <!-- CORE EXPERTISE / PILLARS -->
-  <section id="specializations" class="py-24 border-t border-dark-border bg-[#0b101c]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl mb-16">
-        <h2 class="text-xs font-mono font-bold text-brand-400 tracking-widest uppercase mb-3">Core Pillars</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Engineering Focus & Capabilities</p>
-        <p class="text-slate-400 mt-3 text-base">From console compliance to headless multiplayer servers and memory budgeting.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1 -->
-        <div class="p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 text-brand-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="gamepad-2" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Console & Porting</h3>
-          <p class="text-sm text-slate-400 leading-relaxed mb-4">
-            Nintendo Switch compliance, TRC requirements, Unity New Input System, FMOD audio integration, controller & handheld optimization.
-          </p>
-          <div class="flex flex-wrap gap-1.5 font-mono text-[11px] text-brand-400">
-            <span class="bg-dark-card px-2 py-0.5 rounded">Nintendo Switch</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">PC</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">FMOD</span>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 border border-brand-accent/20 text-brand-accent flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="network" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Multiplayer & Sync</h3>
-          <p class="text-sm text-slate-400 leading-relaxed mb-4">
-            Real-time UDP sync, WebSockets, Socket.io, server-authoritative anti-cheat validation, matchmaking, handling thousands of concurrent low-latency sessions.
-          </p>
-          <div class="flex flex-wrap gap-1.5 font-mono text-[11px] text-brand-accent">
-            <span class="bg-dark-card px-2 py-0.5 rounded">UDP Sync</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">Socket.io</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">UGS</span>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="gauge" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Deep Optimization</h3>
-          <p class="text-sm text-slate-400 leading-relaxed mb-4">
-            Zero-GC object pooling, draw-call batching, Unity/Xcode/Android profiling, stripped Read/Write RAM, Addressables remote catalogs on Cloudflare R2 / AWS S3.
-          </p>
-          <div class="flex flex-wrap gap-1.5 font-mono text-[11px] text-emerald-400">
-            <span class="bg-dark-card px-2 py-0.5 rounded">Zero-GC</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">Addressables</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">Memory Profiler</span>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="p-6 rounded-2xl bg-dark-surface border border-dark-border hover:border-brand-500/50 transition-all hover:-translate-y-1 group">
-          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="cpu" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white mb-2">Tooling & Automation</h3>
-          <p class="text-sm text-slate-400 leading-relaxed mb-4">
-            Custom Unity Editor tooling, automated build verification, and modern developer workflows cutting routine dev time by 40–60%.
-          </p>
-          <div class="flex flex-wrap gap-1.5 font-mono text-[11px] text-purple-400">
-            <span class="bg-dark-card px-2 py-0.5 rounded">Custom Inspectors</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">CI Pipelines</span>
-            <span class="bg-dark-card px-2 py-0.5 rounded">Editor Scripting</span>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
